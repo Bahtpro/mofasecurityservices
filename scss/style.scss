@@ -85,12 +85,22 @@ h6 {
     z-index: 9;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 600px) {
     .container-fluid.nav-bar {
         position: relative;
         background: $secondary;
     }
 }
+@media (max-width: 600px) {
+    img {
+        display: none;
+    }
+}
+img.responsive {
+        display: block;   /* Show images with the .responsive class */
+        width: 100%;      /* Make the images take up full width */
+        height: auto;     /* Keep aspect ratio intact */
+    }
 
 .navbar-dark .navbar-nav .nav-link {
     padding-left: 15px;
@@ -114,7 +124,7 @@ h6 {
     z-index: 1;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 600px) {
     .feature .feature-item {
         border: none !important;
     }
